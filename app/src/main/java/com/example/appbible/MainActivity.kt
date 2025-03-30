@@ -1,0 +1,20 @@
+package com.example.appbible
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity // Importação corrigida
+import android.widget.Button
+import android.widget.TextView
+
+class MainActivity : AppCompatActivity() {
+    fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val textView: TextView = findViewById(R.id.textViewGreeting)
+        val button: Button = findViewById(R.id.buttonClick)
+
+        button.setOnClickListener {
+            textView.setText(R.string.button_clicked)
+        }
+    }
+}
