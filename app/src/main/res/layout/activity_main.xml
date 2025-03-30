@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Texto centralizado -->
     <TextView
         android:id="@+id/textViewGreeting"
         android:layout_width="wrap_content"
@@ -15,7 +14,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>
 
-    <!-- Botão abaixo do texto -->
     <Button
         android:id="@+id/buttonClick"
         android:layout_width="wrap_content"

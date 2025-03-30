@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
-    fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.buttonClick)
 
         button.setOnClickListener {
-            textView.setText(R.string.button_clicked)
+            textView.setText(R.string.app_name)
         }
     }
 }
