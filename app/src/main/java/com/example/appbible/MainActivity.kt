@@ -1,5 +1,6 @@
 package com.example.appbible
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity // Importação corrigida
 import android.widget.Button
@@ -14,7 +15,13 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.buttonClick)
 
         button.setOnClickListener {
-            textView.setText(R.string.app_name)
+//            textView.setText(R.string.app_name)
+
+            // Navega para a nova Activity
+            val intent = Intent(this, BibleListActivity::class.java)
+            startActivity(intent)
         }
+
+
     }
 }
